@@ -1,0 +1,59 @@
+Project Setup Guide
+-------------------
+
+Follow these instructions carefully to set up the environment and run the Discord Bot.
+
+Step 1: Open Command Prompt (CMD)
+----------------------------------
+- On Windows:
+  1. Press the Windows key or click the Start menu.
+  2. Type "cmd" in the search box.
+  3. Press Enter to open the Command Prompt.
+
+Step 2: (Optional) Create a Virtual Environment
+------------------------------------------------
+It is recommended to use a virtual environment to manage dependencies.
+- In CMD, navigate to your project directory:
+  cd path\to\your\project
+- Create a virtual environment:
+  python -m venv venv
+- Activate the virtual environment:
+  - On Windows:
+    venv\Scripts\activate
+  - On macOS/Linux:
+    source venv/bin/activate
+
+Step 3: Create the .env File
+----------------------------
+The launch file requires an environment variable named BOTENV for your Discord bot token.
+- In your project root directory, create a file named ".env" and add the following line:
+  TOKEN=your_discord_bot_token_here
+Replace "your_discord_bot_token_here" with your actual Discord bot token.
+
+Step 4: Install Dependencies
+----------------------------
+The project requires the following packages:
+- discord.py>=2.0.0
+- python-dotenv>=0.20.0
+- aiohttp>=3.8.1
+- yt-dlp>=2021.12.1
+- requests>=2.25.1
+- pycli (for audio and additional command-line functionality)
+
+To install these dependencies, run the following command in CMD:
+  pip install discord.py>=2.0.0 python-dotenv>=0.20.0 aiohttp>=3.8.1 yt-dlp>=2021.12.1 requests>=2.25.1 pycli
+
+Step 5: Launch the Bot
+----------------------
+The repository already includes a launch file (e.g., "launch.py") that works with the BOTENV variable.
+- In CMD, simply run:
+  python launch.py
+The bot will start, and any required JSON configuration files will be automatically created if they do not exist.
+
+Troubleshooting:
+----------------
+- Ensure you are using Python 3.8 or higher.
+- Verify that your .env file is in the project root and that the BOTENV token is correct.
+- If you encounter issues, check the CMD output for error messages and ensure that all dependencies are properly installed.
+
+Enjoy using the Discord Bot and feel free to customize it to your needs!

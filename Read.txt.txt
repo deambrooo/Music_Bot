@@ -1,0 +1,13 @@
+Welcome to the Music Bot!
+
+This project is a Discord bot built using Python and discord.py. It offers features like playing YouTube audio in a voice channel, interactive playback controls, server status monitoring, and more.
+
+Getting Started:
+1. Make sure you have Python 3.8+ installed.
+2. Install dependencies by running:
+   pip install -r requirements.txt
+3. Set up your environment by following the instructions in setup.txt.
+4. Launch the bot by running the provided launch file.
+5. Enjoy and customize the bot as needed!
+
+For more detailed information, check out the read.md file.
